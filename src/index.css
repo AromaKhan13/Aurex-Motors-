@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+@theme {
+  --color-surface: #131315;
+  --color-surface-dim: #131315;
+  --color-background: #131315;
+  --color-surface-container-lowest: #0e0e10;
+  --color-surface-container-low: #1b1b1d;
+  --color-surface-container: #1f1f21;
+  --color-surface-container-high: #2a2a2c;
+  --color-surface-container-highest: #353437;
+  --color-surface-variant: #353437;
+  --color-surface-bright: #39393b;
+
+  --color-primary: #f2ca7d;
+  --color-on-primary: #402d00;
+  --color-primary-container: #d4af65;
+  --color-on-primary-container: #5b4200;
+  --color-primary-fixed: #ffdea2;
+  --color-primary-fixed-dim: #e8c175;
+
+  --color-secondary: #e3c37a;
+  --color-on-secondary: #3f2e00;
+  --color-secondary-container: #5c4607;
+  --color-on-secondary-container: #d4b56e;
+  --color-secondary-fixed: #ffdf9a;
+
+  --color-tertiary: #bfcfff;
+  --color-tertiary-container: #a1b3e7;
+  --color-on-tertiary: #1b2f5a;
+
+  --color-on-surface: #e5e1e4;
+  --color-on-background: #e5e1e4;
+  --color-on-surface-variant: #d1c5b4;
+  --color-outline: #9a8f80;
+  --color-outline-variant: #4d4639;
+
+  --color-error: #ffb4ab;
+  --color-on-error: #690005;
+  --color-error-container: #93000a;
+
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  html {
+    background-color: #131315;
+    color: #e5e1e4;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #131315;
+    color: #e5e1e4;
+    overflow-x: hidden;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+input[type="range"].aurex-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+input[type="range"].aurex-slider::-webkit-slider-runnable-track {
+  height: 4px;
+  border-radius: 9999px;
+  background: #353437;
+}
+
+input[type="range"].aurex-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  margin-top: -6px;
+  height: 16px;
+  width: 16px;
+  border-radius: 9999px;
+  background: #f2ca7d;
+  border: 2px solid #131315;
+  box-shadow: 0 0 0 1px rgba(242, 202, 125, 0.4);
+}
+
+input[type="range"].aurex-slider::-moz-range-track {
+  height: 4px;
+  border-radius: 9999px;
+  background: #353437;
+}
+
+input[type="range"].aurex-slider::-moz-range-thumb {
+  height: 16px;
+  width: 16px;
+  border-radius: 9999px;
+  background: #f2ca7d;
+  border: 2px solid #131315;
+}

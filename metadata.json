@@ -1,0 +1,6 @@
+{
+  "name": "Aurex Motors",
+  "description": "Luxury Automotive Atelier, Bespoke Commissions & Certified Pre-Owned Showroom in Beverly Hills.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
